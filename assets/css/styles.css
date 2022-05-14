@@ -1,0 +1,9 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: #7B241C;
+    height: 50px;
+    width: 100%;
+}
