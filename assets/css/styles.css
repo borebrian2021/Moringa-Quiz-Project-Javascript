@@ -13,6 +13,14 @@ nav{
     height: 50px;
     width: 100%;
     padding: 10px;
+    display: flex;
+    
+
+}
+.nav p img{
+
+    float: left;
+    color: white;
 
 }
 nav > .logo{
@@ -50,4 +58,17 @@ padding-right: 120px;
     border: 1px solid #7B241C;
     border-radius: 5px;
     text-align: center;
+}
+.buttons{
+    height: 40px;
+    border: none;
+    margin: 10px;
+    padding: 5px;
+    width: 150px;
+    color: white;
+    border-radius: 10px;
+    background-color: #2F2E41;
+}
+.white{
+    color: white;
 }

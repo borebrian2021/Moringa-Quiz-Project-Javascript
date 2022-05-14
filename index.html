@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +9,59 @@
 
     <title>Quizy</title>
 </head>
+
 <body>
     <!-- Nav section -->
     <nav>
         <img class="logo" src="./assets/images/quiz3.png">
+        <p class="white" id="name"></p>
+
     </nav>
 
     <!-- Section 1 -->
-    <div class="container-fluid">
+    <div class="container-fluid p-5" id="welcome">
         <div class="row">
             <div class="col-lg-6 col-sm-6 col-12 ">
-                   <div class="image_section"> <img class="welcome" src="./assets/images/welcome3.svg"/></div>
+                <div class="image_section"> <img class="welcome" src="./assets/images/welcome3.svg" /></div>
             </div>
             <div class="col-lg-6 col-sm-6 col-12 ">
-                <div class="text_section">
-                <h2>Welcome</h2>
-                <p>
-                    We'd like to know your name before you begin your journey throughout our quizzes.
-                </p>
-                <input class="name_input" placeholder="Enter name here"/>
-
+                <div class="text_section" id="text_section">
+                    <h2>Welcome</h2>
+                    <p>
+                        We'd like to know your name before you begin your journey throughout our quizzes.
+                    </p>
+                    <form onsubmit="false" id="my-form">
+                        <input class="name_input" id="name_input" required placeholder="Enter name here" /><br>
+                        <button  class="buttons">Next</button>
+                    </form> 
                 </div>
+            </div>
         </div>
     </div>
-
+    <div class="container-fluid p-5" id="playGame">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12 ">
+                <div class="image_section"> <img class="welcome" src="./assets/images/welcome3.svg" /></div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12 ">
+                <div class="text_section" id="text_section">
+                    <h2>Welcome</h2>
+                    <p>
+                        We'd like to know your name before you begin your journey throughout our quizzes.
+                    </p>
+                    <form onsubmit="false" id="my-form">
+                        <input class="name_input" required placeholder="Enter name here" /><br>
+                        <button  class="buttons">Next</button>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-<script type="javascript" src="./assets/js/javascript.js"></script>
-<script type="javascript" src="./assets/js/jquery/dist/jquery.min.js"></script>
-<script type="javascript" src="./assets/css/bootstrap/dist/js/bootstrap.min.js"></script>
+<script  src="./assets/js/jquery/dist/jquery.min.js"></script>
+<script  src="./assets/css/bootstrap/dist/js/bootstrap.min.js"></script>
+<script  src="./assets/js/javascript.js"></script>
+<link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+<script src="sweetalert2/dist/sweetalert2.min.js"></script>
 
 </html>
