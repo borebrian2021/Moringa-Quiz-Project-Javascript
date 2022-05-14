@@ -27,9 +27,9 @@
             </div>
             <div class="col-lg-6 col-sm-6 col-12 ">
                 <div class="text_section" id="text_section">
-                    <h2>Welcome</h2>
+                    <h2>Welcome Student</h2>
                     <p>
-                        We'd like to know your name before you begin your journey throughout our quizzes.
+                        We'd like to know your name before you begin the quizzes.
                     </p>
                     <form onsubmit="false" id="my-form">
                         <input class="name_input" id="name_input" required placeholder="Enter name here" /><br>
@@ -172,129 +172,62 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid " id="playGame">
+    <div class="container-fluid " id="final">
         <div class="row mt-3">
             <div class="col-lg-6 col-sm-6 col-12 right_line">
                 <div class=" image_section2 " id="instructions"> 
                     <img class="welcome" src="./assets/images/congrats.png" /><br/><br/>
-                    <h2 >Instructions</h2>
+                    <h2 >Congratulations!</h2>
                     <p>
                         
-                        Hi <span id="name2"></span> For each question, click the right answer and then submit. Do not refresh the page before submitting you answers.
+                        Hi <span id="name3"></span> 
+                        Thank You For Participating  in the quiz.
                     </p>
-                    <button  id="begin" class="buttons">Begin quizz <i class="fa fa-angle-double-right white" ></i></button>
 
                 </div>
             </div>
             <div class="col-lg-6 col-sm-6 col-12 " id="shake">
-                <div class="text_section" >
+                <div class="text_section" id="score">
                     
                     <form onsubmit="false" id="questions">
                         <div class="height">
 
                       <div class="row">
                           <div class="col-12 col-lg-12 col-sm-12">
-                    <h3 >Questions</h3>
+                    <h3 >Your Score:</h3>
+                    <h3 >80%</h3>
+                    <h3 class="blue">Remarks</h3>
+                    <h6 class="blue">Your perfomance is:</h6>
+                    <h6 class="blue">Excellent!</h6>
+                    <br/>
+                    <button  class="buttons">Get Remarks</button>
+                    <button  class="buttons">Attemp again</button>
 
-                                <p class="question">1. Quiz question #1</p>
-                  
-                              <ul>
-                              <input class="answer" type="radio" name="q1" value="1">
-                              <label id="correctString1">correct answer 1</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              </ul>
-                            </div>
-                          
-                          <div class="col-12 col-lg-12 col-sm-12">
-                         
-                    <h3 >Questions</h3>
-
-                                <p class="question">1. Quiz question #1</p>
-                  
-                              <ul>
-                              <input class="answer" type="radio" name="q1" value="1">
-                              <label id="correctString1">correct answer 1</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              </ul>
-                            </div>
-                          
-                          <div class="col-12 col-lg-12 col-sm-12">
-                            
-                    <h3 >Questions</h3>
-
-                                <p class="question">1. Quiz question #1</p>
-                  
-                              <ul>
-                              <input class="answer" type="radio" name="q1" value="1">
-                              <label id="correctString1">correct answer 1</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              </ul>
-                            </div>
-                         
-                          <div class="col-12 col-lg-12 col-sm-12">
-                            
-                    <h3 >Questions</h3>
-
-                                <p class="question">1. Quiz question #1</p>
-                  
-                              <ul>
-                              <input class="answer" type="radio" name="q1" value="1">
-                              <label id="correctString1">correct answer 1</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              </ul>
-                         
+                             
+                           
                           </div>
-                          <div class="col-12 col-lg-12 col-sm-12">
-                          
-                    <h3 >Questions</h3>
+                      </div>
+                      </div>
+                      <button  id="begin" class="buttons">Submit <i class="fa fa-angle-double-right white" ></i></button>
+                    </form> 
+                </div>
+                <div class="text_section" id="remark" >
+                    
+                    <form onsubmit="false" id="questions">
+                        <div class="height">
 
-                                <p class="question">1. Quiz question #1</p>
-                  
-                              <ul>
-                              <input class="answer" type="radio" name="q1" value="1">
-                              <label id="correctString1">correct answer 1</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              <br>
-                              <input class="answer" type="radio" name="q1" value="0">
-                              <label>wrong answer</label>
-                              </ul>
+                      <div class="row">
+                          <div class="col-12 col-lg-12 col-sm-12">
+                    <h3 >Your Score:</h3>
+                    <h3 >80%</h3>
+                    <h3 class="blue">Remarks</h3>
+                    <h6 class="blue">Your perfomance is:</h6>
+                    <h6 class="blue">Excellent!</h6>
+                    <br/>
+                    <button  class="buttons">Get Remarks</button>
+                    <button  class="buttons">Attemp again</button>
+
+                             
                            
                           </div>
                       </div>

@@ -115,6 +115,11 @@ nav > .logo{
       text-align: center;
       width: 100%;
   }
+  #final{
+      background-image: url('../images/ceemony.gif');
+      background-repeat: no-repeat;
+      
+  }
   @media screen and (min-width: 600px) {
     .height{
         height: 500px;
