@@ -33,3 +33,9 @@ setTimeout(() => {
    
 });
 
+$("#begin").click(function(){
+  $('#questions').fadeIn('slow');
+  $("#begin").effect("shake");
+
+
+});
