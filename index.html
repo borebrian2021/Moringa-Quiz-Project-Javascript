@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/icons/font-awesome/css/font-awesome.css">
 
     <title>Quizy</title>
 </head>
@@ -19,7 +20,7 @@
     </nav>
 
     <!-- Section 1 -->
-    <div class="container-fluid p-5" id="welcome">
+    <div class="container-fluid " id="welcome">
         <div class="row">
             <div class="col-lg-6 col-sm-6 col-12 ">
                 <div class="image_section"> <img class="welcome" src="./assets/images/welcome3.svg" /></div>
@@ -38,24 +39,24 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid p-5" id="playGame">
-        <div class="row">
+    <div class="container-fluid " id="playGame">
+        <div class="row mt-3">
             <div class="col-lg-6 col-sm-6 col-12 right_line">
-                <div class="two image_section " id="instructions"> 
+                <div class=" image_section2 " id="instructions"> 
                     <img class="welcome" src="./assets/images/instructions.svg" /><br/><br/>
                     <h2 >Instructions</h2>
                     <p>
                         
-                        Hi <span id="name2"></span> For each question, click the right answer and then submit.
+                        Hi <span id="name2"></span> For each question, click the right answer and then submit. Do not refresh the page before submitting you answers.
                     </p>
-                    <button  class="buttons">Begin quizz</button>
+                    <button  id="begin" class="buttons">Begin quizz <i class="fa fa-angle-double-right white" ></i></button>
 
                 </div>
             </div>
             <div class="col-lg-6 col-sm-6 col-12 " id="shake">
                 <div class="text_section" >
                     
-                    <form onsubmit="false" id="my-form">
+                    <form onsubmit="false" id="questions">
 
                       <div class="row">
                           <div class="col-12 col-lg-12 col-sm-12">

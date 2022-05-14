@@ -1,8 +1,10 @@
 
 $(document).ready(function() {
-
+  $('#playGame').hide();
+  $('#questions').hide();
 var playerName;
-$('#playGame').hide();
+
+
 
     $(document).on('submit', '#my-form', function() {
         playerName=$('#name_input').val();
@@ -31,15 +33,3 @@ setTimeout(() => {
    
 });
 
-// $('#process_welcome').submit(function() {
-//     e.preventDefault();
-
-// });
-
-
-
-// function handleWelcome(){
-
-//     $('#welcome').hide('slow');
-        
-//     }
