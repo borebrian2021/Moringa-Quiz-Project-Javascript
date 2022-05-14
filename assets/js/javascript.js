@@ -7,18 +7,25 @@ $('#playGame').hide();
     $(document).on('submit', '#my-form', function() {
         playerName=$('#name_input').val();
         $('#name_input').val('');
-        $('#name').text("  | "+playerName);
-        alert(playerName)
-      setTimeout(() => {
+        $('#name').text("   | "+playerName);
+        $('#name2').text(playerName);
+
+        setTimeout(() => {
         $('#welcome').fadeOut('slow');
 
 
-}, "3000");
+}, "1000");
 setTimeout(() => {
-    $('#playGame').fadeIn('slow');
-$('#name').text('')
+  $('#playGame').fadeIn('slow');
 
-}, "6000")
+
+}, "2000")
+setTimeout(() => {
+  $("#instructions").effect("shake");
+
+}, "4000");
+
+
       return false;
      });
    
