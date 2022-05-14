@@ -1,9 +1,53 @@
+
+@font-face {
+    font-family: Poppins;
+    src: url('../font/futura.ttf');
+}
 *{
-    padding: 0px;
-    margin: 0px;
+  
+    font-family: Poppins;
+    color: #7B241C;
 }
 nav{
     background-color: #7B241C;
     height: 50px;
     width: 100%;
+    padding: 10px;
+
+}
+nav > .logo{
+    height: 30px;
+}
+
+.image_section
+{
+padding: 40px;
+padding-left: 80px;
+display: flex !important;
+justify-content: center !important;
+align-items: center !important;
+width: 100%;
+
+}
+.text_section
+{
+padding: 40px;
+padding-top: 80px;
+display: block !important;
+justify-content: center !important;
+align-items: center !important;
+text-align: center;
+width: 100%;
+padding-right: 120px;
+
+
+}
+.container-fluid .welcome{
+    height: 200px;
+}
+.name_input{
+    padding: 10px;
+    border: 1px solid #7B241C;
+    border-radius: 5px;
+    text-align: center;
 }
