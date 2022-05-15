@@ -51,6 +51,8 @@ function awardRemarks() {
 
   if (p >= 80) {
     $('#remarksM').text("Excellently Passed!")
+
+    
   }
   else if (p >= 50 && p < 80) {
     $('#remarksM').text("Fairly Passed!")
