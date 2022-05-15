@@ -58,8 +58,9 @@ setTimeout(() => {
 });
 
 
-$(document).on('submit', '#my-form2', function() {
-  
+    position: absolute;
+    $(document).on('submit', '#questions', function() {
+  alert('submitted')
 return false;
 });
 

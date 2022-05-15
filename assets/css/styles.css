@@ -8,6 +8,13 @@
     font-family: Poppins;
     color: #7B241C;
 }
+.answer{
+    
+    height: 15px;
+    width: 15px;
+    background-color:#7B241C;
+    border-radius: 50%;
+}
 nav{
     background-color: #7B241C;
     height: 50px;
