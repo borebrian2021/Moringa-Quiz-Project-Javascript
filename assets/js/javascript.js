@@ -14,11 +14,30 @@ var q5 = document.getElementsByName('q5');
 function hideElements() {
   $('#playGame').hide();
   $('#questions').hide();
-  // $('#final').hide();
+  $('#final').hide();
   $('#questions').hide();
   $('#calculating').hide();
 
 }
+
+
+function awardRemarks() {
+  var p=(marks/100)*100;
+  alert(p)
+
+  if(p>=80){
+    $('#remarksM').text("Excellently Passed!")
+  }
+  else if(p>= 50 &&  p<80){
+    $('#remarksM').text("Fairly Passed!")
+
+  }
+  else{
+    $('#remarksM').text("Poorly scored!")
+
+  }
+  }
+
 
 function checkAnswers() {
   for (let i of q1) {
@@ -51,8 +70,8 @@ function checkAnswers() {
       marks = marks + 20;
     }
   }
-
-
+  awardRemarks();
+$('#scoreM').text(marks);
 }
 window.onload = hideElements();
 
@@ -101,7 +120,6 @@ $(document).on('submit', '#questions', function () {
   checkAnswers();
 
   $('#playGame').fadeOut();
-  $('#remarks').hide();
 
   $("#calculating").fadeIn();
 
