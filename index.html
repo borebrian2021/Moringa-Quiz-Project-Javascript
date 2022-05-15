@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#7b241c">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#7b241c">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#7b241c">
     <link rel="stylesheet" href="./assets/css/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/icons/font-awesome/css/font-awesome.css">
+    <link rel = "icon" href = 
+    "./assets/images/quiz3.png" 
+            type = "image/x-icon">
+    <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#7B241C">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#7B241C">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#7B241C">
 
     <title>Quizy</title>
 </head>
@@ -37,10 +40,10 @@
                     <p>
                         We'd like to know your name before you begin the quizzes.
                     </p>
-                    <form id="my-form">
+                    <form  id="my-form">
                         <input class="name_input" id="name_input" required placeholder="Enter name here" /><br>
-                        <button class="buttons">Next</button>
-                    </form>
+                        <button  class="buttons">Next</button>
+                    </form> 
                 </div>
             </div>
         </div>
@@ -48,150 +51,136 @@
     <div class="container-fluid " id="playGame">
         <div class="row mt-3">
             <div class="col-lg-6 col-sm-6 col-12 right_line">
-                <div class=" image_section2 " id="instructions">
-                    <img class="welcome" src="./assets/images/instructions.svg" /><br /><br />
-                    <h2>Instructions</h2>
+                <div class=" image_section2 " id="instructions"> 
+                    <img class="welcome" id="changeImage" src="./assets/images/instructions.svg" /><br/><br/>
+                    <h2 id="goodLuck">Instructions</h2>
                     <p>
-
-                        Hi <span id="name2"></span> For each question, click the right answer and then submit. Do not
-                        refresh the page before submitting you answers.
+                        
+                        Hi <span id="name2"></span><br/><label id="writeText"></label>
                     </p>
-                    <button id="begin" class="buttons">Begin quiz <i
-                            class="fa fa-angle-double-right white"></i></button>
 
                 </div>
             </div>
             <div class="col-lg-6 col-sm-6 col-12 " id="shake">
-                <div class="text_section">
-
-                    <form onsubmit="false" id="questions">
+                <div class="text_section" >
+                    <div class="questionWaiter" id="questionWaiter">
+                        <img src="./assets/images/spin.gif"/>
+                    </div>
+                    <form onsubmit="false"  id="questions">
                         <div class="height">
 
-                            <div class="row">
-                                <div class="col-12 col-lg-12 col-sm-12 text-left">
-                                    <h3>Questions</h3>
+                      <div class="row">
+                          <div class="col-12 col-lg-12 col-sm-12 text-left">
+                        
+                              <div class="questions_card">
+                    <h3 >Questions</h3>
+                    <hr/>
 
-                                    <p class="question">1.Inside which HTML element do we put the JavaScript? (20
-                                        points)</p>
-
-                                    <ul>
-                                        <input class="answer" required type="radio" name="q1" value="0">
-                                        <label id="correctString1">
-                                            <xmp>
-                                                <js>
-                                            </xmp>
-                                        </label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q1" value="1">
-                                        <label>
-                                            <xmp>
-                                                <javascript>
-                                            </xmp>
-                                        </label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q1" value="0">
-                                        <label>
-                                            <xmp>
-                                                <scriptor>
-                                            </xmp>
-                                        </label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q1" value="0">
-                                        <label>
-                                            <xmp>
-                                                <scripting>
-                                            </xmp>
-                                        </label>
-                                    </ul>
-                                </div>
-
-                                <div class="col-12 col-lg-12 col-sm-12 text-left">
-
-
-                                    <p class="question">2. JavaScript is a __________-side programming language. (10
-                                        points)</p>
-
-                                    <ul>
-                                        <input class="answer" required type="radio" name="q2" value="0">
-                                        <label id="correctString1"> Client</label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q2" value="0">
-                                        <label>Server</label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q2" value="1">
-                                        <label>Both</label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q2" value="0">
-                                        <label>None</label>
-                                    </ul>
-                                </div>
-                                <div class="col-12 col-lg-12 col-sm-12 text-left">
-                                    <p class="question">3. Which of the following will write the message “Hello World!”
-                                        in an alert box? (30 points)</p>
-
-                                    <ul>
-                                        <input class="answer" required type="radio" name="q3" value="0">
-                                        <label id="correctString1"> alertBox(“Hello World!”);</label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q3" value="0">
-                                        <label> alert(Hello DataFlair!);</label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q3" value="0">
-                                        <label> msgAlert(“Hello DataFlair!”);</label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q3" value="1">
-                                        <label> alert(“Hello DataFlair”);</label>
-                                    </ul>
-                                </div>
-
-                                <div class="col-12 col-lg-12 col-sm-12 text-left">
-
-
-                                    <p class="question">4.How do you find the minimum of x and y using JavaScript? (20
-                                        points)</p>
-
-                                    <ul>
-                                        <input class="answer" required type="radio" name="q4" value="0">
-                                        <label id="correctString1"> min(x,y);</label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q4" value="0">
-                                        <label>Math.min(x,y,5)</label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q4" value="1">
-                                        <label>Math.min(xy)</label>
-                                        <br>
-                                        <input class="answer" required type="radio" name="q4" value="0">
-                                        <label> min(xy);</label>
-                                    </ul>
-
-                                </div>
-                                <div class="col-12 col-lg-12 col-sm-12 text-left">
-
-
-                                    <p class="question">5. Which of the following statements will throw an error? (20
-                                        points)
-                                    </p>
-
-                                    <ul>
-                                        <input class="answer" type="radio" required name="q5" value="0">
-                                        <label id="correctString1"> var fun = function bar( ){ }</label>
-                                        <br>
-                                        <input class="answer" type="radio" required name="q5" value="1">
-                                        <label> var fun = function bar{ }</label>
-                                        <br>
-                                        <input class="answer" type="radio" required name="q5" value="0">
-                                        <label>function fun( ){ }</label>
-                                        <br>
-                                        <input class="answer" type="radio" required name="q5" value="0">
-                                        <label>function f( x,y){ }</label>
-                                    </ul>
-
-                                </div>
+                                <p class="question">1.Inside which HTML element do we put the JavaScript? (20 points)</p>
+                  
+                              <ul>
+                              <input class="answer" required type="radio" name="q1" value="0">
+                              <label id="correctString1"><xmp><js></xmp></label>
+                              <br>
+                              <input class="answer" required type="radio" name="q1" value="1">
+                              <label><xmp><javascript></xmp></label>
+                              <br>
+                              <input class="answer" required type="radio" name="q1" value="0">
+                              <label><xmp><scriptor></xmp></label>
+                              <br>
+                              <input class="answer" required type="radio" name="q1" value="0">
+                              <label><xmp><scripting></xmp></label>
+                              </ul>
                             </div>
                         </div>
-                        <button type="submit" class="buttons">Submit <i
-                                class="fa fa-angle-double-right white"></i></button>
-                    </form>
+                          
+                          <div class="col-12 col-lg-12 col-sm-12 text-left">
+                            <div class="questions_card">
+                         
+
+                                <p class="question">2. JavaScript is a __________-side programming language. (10 points)</p>
+                  
+                              <ul>
+                              <input class="answer" required type="radio" name="q2" value="0">
+                              <label id="correctString1"> Client</label>
+                              <br>
+                              <input class="answer" required type="radio" name="q2" value="0">
+                              <label>Server</label>
+                              <br>
+                              <input class="answer" required type="radio" name="q2" value="1">
+                              <label>Both</label>
+                              <br>
+                              <input class="answer" required type="radio" name="q2" value="0">
+                              <label>None</label>
+                              </ul>
+                            </div></div>
+                          <div class="col-12 col-lg-12 col-sm-12 text-left">
+                            <div class="questions_card">
+
+                                <p class="question">3. Which of the following will write the message “Hello World!” in an alert box? (30 points)</p>
+                  
+                              <ul>
+                              <input class="answer" required type="radio" name="q3" value="0">
+                              <label id="correctString1"> alertBox(“Hello World!”);</label>
+                              <br>
+                              <input class="answer" required type="radio" name="q3" value="0">
+                              <label> alert(Hello Waorld!);</label>
+                              <br>
+                              <input class="answer" required type="radio" name="q3" value="0">
+                              <label> msgAlert(“Hello World!”);</label>
+                              <br>
+                              <input class="answer" required type="radio" name="q3" value="1">
+                              <label> alert(“Hello World!");</label>
+                              </ul>
+                            </div>
+                         </div>
+                          <div class="col-12 col-lg-12 col-sm-12 text-left">
+                            <div class="questions_card">
+                            
+
+                                <p class="question">4.How do you find the minimum of x and y using JavaScript? (20 points)</p>
+                  
+                              <ul>
+                              <input class="answer" required type="radio" name="q4" value="0">
+                              <label id="correctString1"> min(x,y);</label>
+                              <br>
+                              <input class="answer" required type="radio" name="q4" value="0">
+                              <label>Math.min(x,y,5)</label>
+                              <br>
+                              <input class="answer" required type="radio" name="q4" value="1">
+                              <label>Math.min(x,y)</label>
+                              <br>
+                              <input class="answer" required type="radio" name="q4" value="0">
+                              <label> min(xy);</label>
+                              </ul>
+                         </div>
+                          </div>
+                          <div class="col-12 col-lg-12 col-sm-12 text-left">
+                          
+                            <div class="questions_card">
+
+                                <p class="question">5. Which of the following statements will throw an error? (20 points)
+                                    </p>
+                  
+                              <ul>
+                              <input class="answer" type="radio" required name="q5" value="0">
+                              <label id="correctString1"> var fun = function bar( ){ }</label>
+                              <br>
+                              <input class="answer" type="radio" required name="q5" value="1">
+                              <label> var fun = function bar{ }</label>
+                              <br>
+                              <input class="answer" type="radio" required name="q5" value="0">
+                              <label>function fun( ){ }</label>
+                              <br>
+                              <input class="answer" type="radio" required name="q5" value="0">
+                              <label>function f( x,y){ }</label>
+                              </ul>
+                           </div>
+                          </div>
+                      </div>
+                      </div>
+                      <button  type="submit" class="buttons">Submit <i class="fa fa-angle-double-right white" ></i></button>
+                    </form> 
                 </div>
             </div>
         </div>
@@ -199,52 +188,53 @@
     <div class="container-fluid " id="final">
         <div class="row mt-3">
             <div class="col-lg-6 col-sm-6 col-12 right_line">
-                <div class=" image_section2 " id="instructions">
-                    <img class="welcome" src="./assets/images/congrats.png" /><br /><br />
-                    <h2>Congratulations!</h2>
+                <div class=" image_section2 " id="instructions"> 
+                    <img class="welcome" src="./assets/images/congrats.png" /><br/><br/>
+                    <h2 >Congratulations!</h2>
                     <p>
-
-                        Hi <span id="name3"></span>
-                        Thank You For Participating in the quiz.
+                        
+                        Hi <span id="name3"></span> 
+                        Thank You For Completing The Quiz.
                     </p>
 
                 </div>
             </div>
             <div class="col-lg-6 col-sm-6 col-12 " id="shake">
+              
+                <div id="remarks" >
+                    
+                        <div >
 
-                <div id="remarks">
-
-                    <div>
-
-                        <div class="row">
-                            <div class="col-12 col-lg-12 col-sm-12 text-center">
-                                <h2 class="scoreB">Quiz Board</h2>
-                                <h3 class="white">Your Score:</h3>
-                                <h3 class="white" id="scoreM"></h3>
-                                <hr>
-
-                                <h3 class="white">Remarks</h3>
-                                <h3 class="white" id="remarksM"></h3>
-                                <br />
-                                <hr>
-                                <small class="white">Developed by Brian Kimutai Koskey whith &#10084;</small>
-
-                            </div>
-                        </div>
-                    </div>
+                      <div class="row">
+                          <div class="col-12 col-lg-12 col-sm-12 text-center">
+                              <h2 class="scoreB">Quiz Board</h2>
+                            <h3 class="white">Your Score:</h3>
+                            <h3 class="white" id="scoreM"></h3>
+                    <hr>        
+          
+                    <h3 class="white">Remarks</h3>
+                    <h3 class="white" id="remarksM"></h3>
+                    <br/>
+                    <hr>        
+                             <small class="white">Developed by Brian Kimutai Koskey whith  &#10084;</small>
+                           
+                          </div>
+                      </div>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid " id="calculating">
-        <img src="./assets/images/spin.gif">
-        <h5>Analyzing and calculating your scores...</h5>
+       <img src="./assets/images/spin.gif">
+       <h5>Analyzing and calculating your scores...</h5>
     </div>
 </body>
-<script src="./assets/js/jquery/dist/jquery.min.js"></script>
-<script src="./assets/css/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="./assets/js/javascript.js"></script>
-<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
-    integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
-
+<script  src="./assets/js/jquery/dist/jquery.min.js"></script>
+<script  src="./assets/css/bootstrap/dist/js/bootstrap.min.js"></script>
+<script  src="./assets/js/javascript.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+  integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY="
+  crossorigin="anonymous"></script>
 </html>

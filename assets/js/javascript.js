@@ -7,7 +7,9 @@ var q2 = document.getElementsByName('q2');
 var q3 = document.getElementsByName('q3');
 var q4 = document.getElementsByName('q4');
 var q5 = document.getElementsByName('q5');
-
+var i = 0;
+var txt = '  For each question, click the right answer and then submit. Do not refresh the page before submitting you answers.';
+var speed = 20;
 
 
 //DECLARATION OF FUNCTIONS HERE
@@ -21,23 +23,52 @@ function hideElements() {
 }
 
 
-function awardRemarks() {
-  var p=(marks/100)*100;
-  alert(p)
+function displayQuestions(){
 
-  if(p>=80){
+  // alert("working")
+
+  $("#questionWaiter").fadeOut();
+  setTimeout(() => {
+    var image = $("#changeImage");
+  image.fadeOut('fast', function () {
+    image.attr('src', './assets/images/best.png');
+    image.fadeIn('fast');
+  });
+
+  $('#goodLuck').text('Good Luck!')
+    $('#questions').fadeIn();
+
+
+
+  }, "1000");
+
+
+
+};
+
+function awardRemarks() {
+  var p = (marks / 100) * 100;
+
+  if (p >= 80) {
     $('#remarksM').text("Excellently Passed!")
   }
-  else if(p>= 50 &&  p<80){
+  else if (p >= 50 && p < 80) {
     $('#remarksM').text("Fairly Passed!")
 
   }
-  else{
+  else {
     $('#remarksM').text("Poorly scored!")
 
   }
-  }
+}
+function typeWriter() {
 
+  if (i < txt.length) {
+    document.getElementById("writeText").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
 
 function checkAnswers() {
   for (let i of q1) {
@@ -71,11 +102,11 @@ function checkAnswers() {
     }
   }
   awardRemarks();
-$('#scoreM').text(marks);
-setTimeout(() => {
-  $("#remarks").effect("shake");
+  $('#scoreM').text(marks);
+  setTimeout(() => {
+    $("#remarks").effect("shake");
 
-}, "5000");
+  }, "5000");
 }
 window.onload = hideElements();
 
@@ -112,6 +143,14 @@ $(document).ready(function () {
       $("#instructions").effect("shake");
 
     }, "4000");
+    setTimeout(() => {
+      typeWriter();
+    }, "5000");
+
+    setTimeout(() => {
+      displayQuestions();
+      
+    }, "10000");
 
 
     return false;
@@ -134,14 +173,9 @@ $(document).on('submit', '#questions', function () {
 
   }, "4000");
 
-console.log(marks);
+  console.log(marks);
   return false;
 });
 
 
 
-
-$("#begin").click(function () {
-  $('#questions').fadeIn();
-  $("#begin").effect();
-});
