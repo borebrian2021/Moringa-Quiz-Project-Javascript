@@ -99,7 +99,10 @@ $(document).ready(function () {
 $(document).on('submit', '#questions', function () {
 
   checkAnswers();
-  
+  $('#final').fadeIn();
+
+  $('#questions').fadeOut();
+console.log(marks);
   return false;
 });
 
@@ -107,6 +110,6 @@ $(document).on('submit', '#questions', function () {
 
 
 $("#begin").click(function () {
-  $('#questions').fadeIn('slow');
-  $("#begin").effect("shake");
+  $('#questions').fadeIn();
+  $("#begin").effect();
 });
