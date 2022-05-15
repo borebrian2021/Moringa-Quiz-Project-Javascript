@@ -1,22 +1,65 @@
+//DECLARATION OF VARIABLES  
+var playerName;
+const allQuestions=5;
+var passed=0;
+var q1 = document.getElementsByName('q1');
+var q2 = document.getElementsByName('q2');
+var q3 = document.getElementsByName('q3');
+var q4 = document.getElementsByName('q4');
+var q5 = document.getElementsByName('q5');
+
+
+
+//DECLARATION OF FUNCTIONS HERE
 function hideElements(){
   $('#playGame').hide();
   $('#questions').hide();
   $('#final').hide();
   $('#questions').hide();
+}
 
+function checkAnswers(){
+  for (let i of q1) {
+
+    if (i.checked && i.value==1) {
+        passed=passed+1;
+      }
+    }
+    for (let i of q2) {
+
+      if (i.checked && i.value==1) {
+          passed=passed+1;
+        }
+      }
+      for (let i of q3) {
+
+        if (i.checked && i.value==1) {
+            passed=passed+1;
+          }
+        }
+        for (let i of q4) {
+
+          if (i.checked && i.value==1) {
+              passed=passed+1;
+            }
+          }
+          for (let i of q5) {
+
+            if (i.checked && i.value==1) {
+                passed=passed+1;
+              }
+            }
+alert(passed);
 
 
 }
-
-
 window.onload =   hideElements();
 
 $(document).ready(function() {
 
   $('#remarks').hide();
 
-//DECLARATION OF VARIABLES  
-var playerName;
+
 
 
 
@@ -58,9 +101,9 @@ setTimeout(() => {
 });
 
 
-    position: absolute;
     $(document).on('submit', '#questions', function() {
-  alert('submitted')
+      
+        checkAnswers();
 return false;
 });
 
