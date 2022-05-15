@@ -39,9 +39,10 @@ This page gives the instructions of the test.
 - Click this link to view the live application https://borebrian2021.github.io/Moringa-Quiz-Project-Javascript/
 ### Technology  Used
 * HTML - which was used to develope the structure off the pages.
-* CSS - which was used to style the User Interface.
+* VANILLA CSS - which was used to style the User Interface.
 * Bootstraps-Used for dealing with page responsiveness.
 * JQuery-It was used to add animation to the project.
+* VANILLA Javascript-Used to make page interactive.
 
 
 
