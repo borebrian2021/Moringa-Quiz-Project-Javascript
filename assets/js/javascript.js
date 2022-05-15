@@ -23,19 +23,19 @@ function hideElements() {
 }
 
 
-function displayQuestions(){
+function displayQuestions() {
 
   // alert("working")
 
   $("#questionWaiter").fadeOut();
   setTimeout(() => {
     var image = $("#changeImage");
-  image.fadeOut('fast', function () {
-    image.attr('src', './assets/images/best.png');
-    image.fadeIn('fast');
-  });
+    image.fadeOut('fast', function () {
+      image.attr('src', './assets/images/best.png');
+      image.fadeIn('fast');
+    });
 
-  $('#goodLuck').text('Good Luck!')
+    $('#goodLuck').text('Good Luck!')
     $('#questions').fadeIn();
 
 
@@ -52,7 +52,7 @@ function awardRemarks() {
   if (p >= 80) {
     $('#remarksM').text("Excellently Passed!")
 
-    
+
   }
   else if (p >= 50 && p < 80) {
     $('#remarksM').text("Fairly Passed!")
@@ -117,12 +117,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
   //HANDLING FORM SUBMIT AND AVOIDING PAGE RELOADING
 
   $(document).on('submit', '#my-form', function () {
@@ -151,7 +145,7 @@ $(document).ready(function () {
 
     setTimeout(() => {
       displayQuestions();
-      
+
     }, "10000");
 
 
