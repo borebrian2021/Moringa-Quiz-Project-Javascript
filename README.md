@@ -67,4 +67,3 @@ SOFTWARE.
 [Go Back to the top](#Screenshot)
 ## Authors Info
 Linkedin - [Brain Koskei Kimutai](https://www.linkedin.com/in/bore-brian-5655b814b/)
-<!-- [Go Back to the top](#delani-studio) -->
