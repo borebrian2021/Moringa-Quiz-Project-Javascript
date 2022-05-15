@@ -10,6 +10,8 @@
 
  - [Installation Process](#installation-Process)
  - [Live Link](#Live-Link)
+ - [Figma Link](#Figma-Link)
+
  - [Technology  Used](#technology-Used)
  - [Licence](#licence)
  - [Authors Info](#Authors-Info)
@@ -37,6 +39,8 @@ This page gives the instructions of the test.
  [Go Back to the top](#Screenshot)
 ### Live Link
 - Click this link to view the live application https://borebrian2021.github.io/Moringa-Quiz-Project-Javascript/
+### Figma Link
+- Click this link to view the figma design of this project https://www.figma.com/file/MYat56ANGYAA2FQpkcapnx/Untitled?node-id=0%3A1
 ### Technology  Used
 * HTML - which was used to develope the structure off the pages.
 * VANILLA CSS - which was used to style the User Interface.
