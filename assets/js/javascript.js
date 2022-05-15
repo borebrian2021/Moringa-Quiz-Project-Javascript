@@ -72,6 +72,10 @@ function checkAnswers() {
   }
   awardRemarks();
 $('#scoreM').text(marks);
+setTimeout(() => {
+  $("#remarks").effect("shake");
+
+}, "5000");
 }
 window.onload = hideElements();
 

@@ -121,6 +121,7 @@ nav > .logo{
       border-radius: 5px;
       text-align: center;
       width: 100%;
+      transition: all 0.3s ease-in-out;
   }
   #final{
       background-image: url('../images/ceemony.gif');
