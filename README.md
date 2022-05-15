@@ -1,4 +1,4 @@
-# Quick Movers
+# Quiz Board
 ## By Brian Kimutai Koskei
 ## Screenshot
  ![image](./assets/images/screenshort.png)
@@ -6,7 +6,7 @@
  - [Description](#description)
  - [Landing Page](#Landing-Page)
  - [Instructions](#Instructions)
- - [Requirement](#Requirement)
+ - [Requirement](#Requirements)
 
  - [Installation Process](#installation-Process)
  - [Live Link](#Live-Link)
