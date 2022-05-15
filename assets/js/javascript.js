@@ -14,7 +14,7 @@ var q5 = document.getElementsByName('q5');
 function hideElements() {
   $('#playGame').hide();
   $('#questions').hide();
-  $('#final').hide();
+  // $('#final').hide();
   $('#questions').hide();
   $('#calculating').hide();
 
@@ -102,6 +102,7 @@ $(document).on('submit', '#questions', function () {
   checkAnswers();
 
   $('#playGame').fadeOut();
+  $('#remarks').hide();
 
   $("#calculating").fadeIn();
 

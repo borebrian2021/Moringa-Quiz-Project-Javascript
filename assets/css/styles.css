@@ -190,5 +190,18 @@ nav > .logo{
     #calculating{
         justify-content: center;
         align-items: center;
+        height: 100%;
         text-align: center;
+    }
+
+    #calculating img{
+        height: 140px;
+        margin-top: 240px;
+    }
+    #remarks{
+        background-color: #7B241C;
+        width: 95%;
+        margin: 15px;
+        border-radius: 15px;
+        color: white !important;
     }
