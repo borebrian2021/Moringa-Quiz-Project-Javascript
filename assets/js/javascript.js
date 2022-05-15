@@ -24,31 +24,31 @@ function checkAnswers() {
   for (let i of q1) {
 
     if (i.checked && i.value == 1) {
-      marks = marks + 1;
+      marks = marks + 20;
     }
   }
   for (let i of q2) {
 
     if (i.checked && i.value == 1) {
-      marks = marks + 1;
+      marks = marks + 10;
     }
   }
   for (let i of q3) {
 
     if (i.checked && i.value == 1) {
-      marks = marks + 1;
+      marks = marks + 30;
     }
   }
   for (let i of q4) {
 
     if (i.checked && i.value == 1) {
-      marks = marks + 1;
+      marks = marks + 20;
     }
   }
   for (let i of q5) {
 
     if (i.checked && i.value == 1) {
-      marks = marks + 1;
+      marks = marks + 20;
     }
   }
 
@@ -58,7 +58,6 @@ window.onload = hideElements();
 
 $(document).ready(function () {
 
-  $('#remarks').hide();
 
 
 
