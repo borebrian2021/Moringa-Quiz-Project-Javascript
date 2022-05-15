@@ -16,6 +16,8 @@ function hideElements() {
   $('#questions').hide();
   $('#final').hide();
   $('#questions').hide();
+  $('#calculating').hide();
+
 }
 
 function checkAnswers() {
@@ -97,11 +99,19 @@ $(document).ready(function () {
 
 
 $(document).on('submit', '#questions', function () {
-
   checkAnswers();
-  $('#final').fadeIn();
 
-  $('#questions').fadeOut();
+  $('#playGame').fadeOut();
+
+  $("#calculating").fadeIn();
+
+  setTimeout(() => {
+    $("#calculating").fadeOut();
+
+    $('#final').fadeIn();
+
+  }, "4000");
+
 console.log(marks);
   return false;
 });
